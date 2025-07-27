@@ -51,6 +51,6 @@ const formatDate = {
     return Number.isInteger(Number(date));
   },
   hasError(date) {
-    return isNaN(new Date(date)) && !this.isUnix(date);
+    return isNaN(new Date(date)) && !this.isUnix(date) && date;
   }
 }

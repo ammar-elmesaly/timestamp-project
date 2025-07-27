@@ -1,13 +1,13 @@
-# Timestamp Microservice
+# 🕒 Timestamp Microservice
 
-This is a Node.js - Express practice project, simple timestamp microservice, source: https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/timestamp-microservice
+This is a simple Node.js + Express project that provides a timestamp microservice. It returns the Unix and UTC time for given date inputs.
 
-
-## Available Endpoints
+## 📌 Available Endpoints
 
 ### `GET /`
 
-- **Description**: Display example usage and output.
+- **Description**: Root route (optional UI or project intro).
+- **Returns**: Basic HTML or message.
 
 ---
 
@@ -24,13 +24,13 @@ This is a Node.js - Express practice project, simple timestamp microservice, sou
 
 ---
 
-### `GET /api/:date?`
+### `GET /api/:date`
 
 - **Description**: Returns the Unix and UTC time for a given `date` string or timestamp.
 - **Route Parameter**:
-  - `:date?` – A date string (`YYYY-MM-DD`) or Unix timestamp (milliseconds since epoch).
+  - `:date` – A date string (`YYYY-MM-DD`) or Unix timestamp (milliseconds since epoch).
 
-#### Valid Examples:
+#### ✅ Valid Examples:
 
 - **ISO date string**:  
   `GET /api/2025-07-27`
@@ -50,7 +50,7 @@ This is a Node.js - Express practice project, simple timestamp microservice, sou
   }
   ```
 
-#### Invalid Example:
+#### ❌ Invalid Example:
 
 - **Invalid date**:  
   `GET /api/invalid-date`
@@ -62,11 +62,12 @@ This is a Node.js - Express practice project, simple timestamp microservice, sou
 
 ---
 
-## How to Run Locally
+## 🚀 How to Run Locally
 
 ```bash
-git clone https://github.com/ammar-elmesaly/timestamp-project.git
-cd timestamp-project
+git clone <your-repo-url>
+cd timestamp-microservice
 npm install
 npm start
 ```
+
